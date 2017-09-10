@@ -66,6 +66,8 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="Source\TCP\BaseTCPTests.cs" />
+    <Compile Include="Source\FrameTestTCP.cs" />
     <Compile Include="Source\UnityEditor\JSONNodeTests.cs" />
     <Compile Include="Source\BaseTest.cs" />
     <Compile Include="Source\FrameTests.cs" />
