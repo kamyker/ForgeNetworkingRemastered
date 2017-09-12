@@ -70,7 +70,7 @@ namespace UnitTests.NetworkObjects
 				return;
 			}
 
-			WaitFor(() => { return otherClientObj != null; });
+			WaitFor(() => { return otherClient != null; });
 			otherClientBehavior = new RPCBehavior();
 			otherClientBehavior.Initialize(otherClientObj);
 
