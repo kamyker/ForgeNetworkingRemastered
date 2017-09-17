@@ -48,3 +48,4 @@ sysinfo.txt
 [cC]onsole[tT]est[pP]rogram/obj/
 MasterServerQueue/
 Forge Networking Remastered Unity/Assembly-CSharp.csproj
+*.meta
