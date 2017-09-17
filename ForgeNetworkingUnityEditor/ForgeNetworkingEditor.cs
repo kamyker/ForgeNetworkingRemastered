@@ -14,6 +14,7 @@ namespace BeardedManStudios.Forge.Networking.UnityEditor
 	public class ForgeNetworkingEditor : EditorWindow
 	{
 		#region Constants
+
 		/// <summary>
 		/// This is the default interpolation we will be using
 		/// </summary>
@@ -25,14 +26,18 @@ namespace BeardedManStudios.Forge.Networking.UnityEditor
 		/// <summary>
 		/// REGEX for matching words on so that the user doesn't type invalid characters
 		/// </summary>
-		public const string REGEX_MATCH = @"^[a-zA-Z]+"; //Must be either lowercase or uppercase characters
+		public const string REGEX_MATCH = @"^[a-zA-Z]+";
+		//Must be either lowercase or uppercase characters
+
 		#endregion
 
 		#region Private Variables
+
 		/// <summary>
 		/// This is a singleton class because we need to access it in our nested classes
 		/// </summary>
 		private static ForgeNetworkingEditor _instance;
+
 		public static ForgeNetworkingEditor Instance { get { return _instance; } }
 
 		/// <summary>
@@ -59,11 +64,11 @@ namespace BeardedManStudios.Forge.Networking.UnityEditor
 		/// <summary>
 		/// This is the generated folder path
 		/// </summary>
-		private const string GENERATED_FOLDER_PATH = "Bearded Man Studios Inc/Generated";
+		private const string GENERATED_FOLDER_PATH = "ForgeNetworkingRemastered/Forge Networking Remastered Unity/Assets/Bearded Man Studios Inc/Generated";
 		/// <summary>
 		/// This is the user generated folder path
 		/// </summary>
-		private const string USER_GENERATED_FOLDER_PATH = "Bearded Man Studios Inc/Generated/UserGenerated";
+		private const string USER_GENERATED_FOLDER_PATH = "ForgeNetworkingRemastered/Forge Networking Remastered Unity/Assets/Bearded Man Studios Inc/Generated/UserGenerated";
 		/// <summary>
 		/// This is the wizard data stored by the user previously
 		/// </summary>
@@ -118,6 +123,7 @@ namespace BeardedManStudios.Forge.Networking.UnityEditor
 		public static Color LightsOnBackgroundColor = new Color(0.0118f, 0.18f, 0.286f);
 
 		#region Textures
+
 		//TEXTURES! ALL THE TEXTURES
 		public static Texture2D Arrow;
 		public static Texture2D SideArrow;
@@ -129,11 +135,13 @@ namespace BeardedManStudios.Forge.Networking.UnityEditor
 		public static Texture2D SaveIcon;
 		public static Texture2D LightbulbIcon;
 		public static Texture2D BackgroundTexture;
+
 		#endregion
 
 		#endregion
 
 		#region Nested Enums
+
 		/// <summary>
 		/// We have different states we can access from the editor window
 		/// </summary>
@@ -143,9 +151,11 @@ namespace BeardedManStudios.Forge.Networking.UnityEditor
 			Create,
 			Modify
 		}
+
 		#endregion
 
 		#region Initialize and Constructor
+
 		// Add menu named "Network Editor" to the Window menu
 		[MenuItem("Window/Forge Networking/Network Contract Wizard %g")]
 		public static void Init()
@@ -354,6 +364,7 @@ namespace BeardedManStudios.Forge.Networking.UnityEditor
 			Close();
 			_instance = null;
 		}
+
 		#endregion
 
 		/// <summary>
@@ -424,6 +435,7 @@ namespace BeardedManStudios.Forge.Networking.UnityEditor
 		}
 
 		#region Menu Renders
+
 		/// <summary>
 		/// This will render the main menu
 		/// </summary>
@@ -692,9 +704,11 @@ namespace BeardedManStudios.Forge.Networking.UnityEditor
 
 			GUILayout.EndHorizontal();
 		}
+
 		#endregion
 
 		#region Forge Factory
+
 		/// <summary>
 		/// Generate the forge factory class
 		/// </summary>
@@ -711,6 +725,7 @@ namespace BeardedManStudios.Forge.Networking.UnityEditor
 		#endregion
 
 		#region Code Generation
+
 		/// <summary>
 		/// Generate a source network object based on the class and button provided
 		/// </summary>
@@ -931,6 +946,7 @@ namespace BeardedManStudios.Forge.Networking.UnityEditor
 		#endregion
 
 		#region Compiling
+
 		/// <summary>
 		/// Reloads the scripts into the editor
 		/// </summary>
@@ -1062,6 +1078,7 @@ namespace BeardedManStudios.Forge.Networking.UnityEditor
 		#endregion
 
 		#region Checks
+
 		/// <summary>
 		/// REGEX check for whether there is any invalid characters in the name provided
 		/// </summary>
