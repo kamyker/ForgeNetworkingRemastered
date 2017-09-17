@@ -64,11 +64,11 @@ namespace BeardedManStudios.Forge.Networking.UnityEditor
 		/// <summary>
 		/// This is the generated folder path
 		/// </summary>
-		private const string GENERATED_FOLDER_PATH = "ForgeNetworkingRemastered/Forge Networking Remastered Unity/Assets/Bearded Man Studios Inc/Generated";
+		private const string GENERATED_FOLDER_PATH = "Forge Networking Remastered Unity/Assets/Bearded Man Studios Inc/Generated";
 		/// <summary>
 		/// This is the user generated folder path
 		/// </summary>
-		private const string USER_GENERATED_FOLDER_PATH = "ForgeNetworkingRemastered/Forge Networking Remastered Unity/Assets/Bearded Man Studios Inc/Generated/UserGenerated";
+		private const string USER_GENERATED_FOLDER_PATH = "Forge Networking Remastered Unity/Assets/Bearded Man Studios Inc/Generated/UserGenerated";
 		/// <summary>
 		/// This is the wizard data stored by the user previously
 		/// </summary>
