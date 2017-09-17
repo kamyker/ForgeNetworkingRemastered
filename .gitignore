@@ -49,3 +49,4 @@ sysinfo.txt
 MasterServerQueue/
 Forge Networking Remastered Unity/Assembly-CSharp.csproj
 *.meta
+UnitTests/UnitTests.csproj
