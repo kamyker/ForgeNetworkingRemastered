@@ -3,7 +3,7 @@
 
 
 
-
+**This is raw version without .dlls. Clone or download "ForgeNetworkingRemastered" directly to unity project ("Assets" folder).**
 
 In short, Forge Networking is a free and open source multiplayer game (multi-user) networking system that has a very good integration with the Unity game engine. You wanna make a multiplayer game or real time multi-user application? This is the library for you.
 
